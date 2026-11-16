@@ -1,0 +1,21 @@
+{
+  "name": "healthtech-workflow-desk",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch --experimental-strip-types src/knowledge_route.ts",
+    "start": "node --experimental-strip-types src/knowledge_route.ts",
+    "seed": "node --experimental-strip-types src/seed_workflows.ts",
+    "test": "node --experimental-strip-types --test test/patient_safety.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "openai": "^5.20.0",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.18.0",
+    "typescript": "^5.9.2"
+  }
+}
